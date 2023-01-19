@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolade's Program</title>
+</head>
+<body>
+    <form action="action.php" method="get"><!--This will append your data to the edd of the url while post is for secure information.Get is 
+    just for search boxes-->
+        <div>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Kolade" required>
+        </div>
+
+         <br>
+
+        <div>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Omolagba" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="1234" minlength="4" maxlength="8" required>
+            </div> 
+
+            <br>
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="user's email" placeholder="koladeomolagba@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="tel">Phone no:</label>
+                <input type="tel" id="tel" name="Phone No" placeholder="07048023939" required>
+                </div>
+        <br>
+        <div>
+            <label for="date">Date of birth:</label>
+            <input type="date" id="date" name="Date of birth" placeholder="08/25/2007" required>
+            </div>
+            <br>
+            <div>
+                <label for="quantity">No of goods:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="7" value="2" placeholder="6" required>
+                </div>
+                <br>
+
+             <div>
+             <label>Work:</label>  
+
+                 <label for="Student">Student</label>
+                 <input id="Student" type="radio" name="work" value="Student">
+
+                 <label for="Professor">Professor</label>
+                 <input id="Professor" type="radio" name="work" value="Professor">
+
+                 <label for="Lecturer">Lecturer</label>
+                 <input id="Lecturer" type="radio" name="work" value="Lecturer">
+             </div>
+             <br>
+             <div>
+                <label>Country</label>
+             <select name="country">
+                <option value="Nigeria">Nigeria</option>
+                <option value="France">France</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Togo">Togo</option>
+                <option value="Lome">Lome</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Spain">Spain</option>
+            </select>
+             </div>
+             <br>
+             <div>
+                <label for="sub">Subscribe</label>
+                <input id="sub" type="checkbox" name="Subscribed">
+             </div>
+             <br>
+        <input type="reset">
+        <br><br>
+        <div>
+        <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
